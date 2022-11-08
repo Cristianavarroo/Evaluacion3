@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Mi formulario</title>
+</head>
+<body>
+    <div class="container mt-3">
+        <h2>Formulario de registro</h2>
+        <hr>
+        <form class="row g-3" action="Exito.html" method="post" onsubmit="return validar()">
+            <div class="col-md-6">
+                <label for="email" class="form-label">Correo electrónico</label>
+                <input type="text" class="form-control" id="email" placeholder="mail@example.com">
+                <div id="msj_email"></div>
+            </div>
+            <div class="col-md-3">
+                <label for="pass1" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="pass1">
+                <div id="msj_pass1"></div>
+            </div>
+            <div class="col-md-3">
+                <label for="pass2" class="form-label">Repita la contraseña</label>
+                <input type="password" class="form-control" id="pass2">
+                <div id="msj_pass2"></div>
+            </div>
+            <div class="col-12">
+                <label for="addr" class="form-label">Dirección</label>
+                <input type="text" class="form-control" id="addr" placeholder="Las Gaviotas 666">
+                <div id="msj_addr"></div>
+            </div>
+            <div class="col-md-3">
+                <label for="tlphone" class="form-label">Teléfono</label>
+                <input type="number" class="form-control" id="tlphone">
+                <div id="msj_tlphone"></div>
+            </div>
+            <div class="col-md-4">
+                <label for="state" class="form-label">Comuna</label>
+                <select id="state" class="form-select">
+                    <option  value="0">Elija una ...</option>
+                    <option value="1">Valdivia</option>
+                    <option value="2">Máfil </option>
+                    <option value="3">Corral</option>
+                    <option value="4">Los Lagos</option>
+                    <option value="5">Paillaco</option>
+                    <option value="6">La Unión</option>
+                    <option value="7">Río Bueno</option>
+                </select>
+                <div id="msj_state"></div>
+            </div>
+           
+            <div class="col-md-4">
+                <label for="url" class="form-label">Url</label>
+                <input type ="text" class="form-control"  id="url" placeholder="">
+            </div>
+            <div class="col-12 mt-4">
+                <h2>Lista de aficciones</h2>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkbox1">
+                    <label class="form-check-label" for="flexCheckDefault">
+                    Caminar
+                </div>
+            </div>
+            <div class="col-12 mt-2">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkbox2">
+                    <label class="form-check-label" for="flexCheckDefault">
+                    Hacer ejercicio
+                </div>
+            </div>
+            <div class="col-12 mt-2">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkbox3">
+                    <label class="form-check-label" for="flexCheckDefault">
+                    Viajar
+                </div>
+            </div>
+            <div class="col-12 mt-2">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkbox4">
+                    <label class="form-check-label" for="flexCheckDefault">
+                    Escuchar música
+                </div>
+            </div>
+            <div class="col-12 mt-2">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkbox5">
+                    <label class="form-check-label" for="flexCheckDefault">
+                    Jugar video juegos
+                </div>
+                <div id="div_checkbox"></div>
+                
+            </div>
+
+
+       
+            <div class="col-12">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="check">
+                <label class="form-check-label" for="check">
+                    Aceptar los terminos y condiciones
+                </label>
+                <div id="msj_check"></div>
+            </div>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Registrarse</button>
+            </div>
+        </form>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
